@@ -1,0 +1,8 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+UserTwo Five,u2.five@example.com,202-202-2076,2025-08-02,180.00,190,15,Steak|Steak|Wine|Fries
+UserTwo Six,u2.six@example.com,202-202-2077,2025-08-06,110.50,120,13,Pasta|Salad|Beer
+UserTwo Seven,u2.seven@example.com,202-202-2078,2025-08-10,220.00,240,15,Pizza|Pizza|Pizza|Wine|Soda
+UserTwo Eight,u2.eight@example.com,202-202-2079,2025-08-15,65.00,70,9,Burger|Beer
+UserTwo Nine,u2.nine@example.com,202-202-2080,2025-08-19,58.75,65,7,Sandwich|Soda
+UserTwo Five,u2.five@example.com,202-202-2076,2025-08-24,195.00,205,15,Steak|Steak|Wine|Cake
+UserTwo Six,u2.six@example.com,202-202-2077,2025-08-28,50.00,55,13,Soup|Soda

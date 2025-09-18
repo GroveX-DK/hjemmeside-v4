@@ -1,0 +1,8 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+UserOne Golf,u1.golf@example.com,101-101-1016,2024-10-04,50.00,60,4,Pizza|Beer
+UserOne Hotel,u1.hotel@example.com,101-101-1017,2024-10-07,70.25,80,8,Steak|Fries
+UserOne India,u1.india@example.com,101-101-1018,2024-10-11,35.50,40,2,Sandwich|Soda
+UserOne Juliett,u1.juliett@example.com,101-101-1019,2024-10-16,90.00,100,11,Pasta|Wine|Salad
+UserOne Kilo,u1.kilo@example.com,101-101-1020,2024-10-20,42.80,50,5,Burger|Soda
+UserOne Golf,u1.golf@example.com,101-101-1016,2024-10-25,65.00,75,4,Pizza|Pizza|Beer
+UserOne Hotel,u1.hotel@example.com,101-101-1017,2024-10-29,20.00,25,8,Fries|Soda

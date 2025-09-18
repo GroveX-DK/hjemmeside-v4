@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/pictures/favicon.png">
+    <title>GroveX Auttomatisering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/pictures/favicon.png" alt="GroveX" style="max-height: 85px;"></a>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#" class="login-btn" id="login-popup-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="assets/videos/0811.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-text">
+                <h1>Automatisering er vejen frem</h1>
+            </div>
+        </section>
+
+        <section class="facts">
+            <div class="fact-item">
+                <div class="fact-text">
+                    <h1>Hvad vi kan gøre</h1>
+                    <p>Vi hjælper restauranter med at lave professionelle hjemmesider og brugervenlige bookingsystemer. Det betyder, at restauranterne ikke selv behøver at bruge tid og energi på tekniske ting eller besværlige IT-løsninger. I stedet kan de fokusere på det, de er bedst til – nemlig at lave god mad og give deres gæster en god oplevelse. Vi sørger for, at det er let for kunderne at finde restauranternes sider online, læse om menuen og booke et bord direkte via hjemmesiden. På den måde gør vi det nemmere for restauranterne at tiltrække flere gæster, mens de kan koncentrere sig om madlavningen og servicen.</p>
+                </div>
+                <div class="fact-image">
+                    <img src="assets/pictures/istockphoto-1307190527-612x612.jpg" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-code">
+            <div class="fact-text" style="max-width: 800px; margin: 0 auto 2rem;">
+                <h1>Se Vores System i Aktion</h1>
+                <p>Vores bookingsystem er designet til at være så intuitivt som muligt. Med et enkelt klik kan du se, hvordan en booking bevæger sig fra at være en rå forespørgsel til en raffineret og bekræftet aftale. Dette giver dig et klart overblik over hele processen og sikrer, at ingen detaljer går tabt undervejs.</p>
+            </div>
+            <div class="fact-item">
+                <div class="simulation-container">
+                    <header>
+                        <h2>Booking Process Simulation</h2>
+                    </header>
+                    <div class="conveyor-belt-container">
+                        <div class="belt-track">
+                            <div id="beltPattern" class="belt-pattern"></div>
+                            <div class="stage-markers">
+                                <div class="stage-marker">
+                                    <div id="stageDot1" class="stage-dot red"></div>
+                                    <span class="stage-label">Modtaget</span>
+                                </div>
+                                <div class="stage-marker">
+                                    <div id="stageDot2" class="stage-dot blue"></div>
+                                    <span class="stage-label">Behandler</span>
+                                </div>
+                                <div class="stage-marker">
+                                    <div id="stageDot3" class="stage-dot green"></div>
+                                    <span class="stage-label">Bekræftet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bookingItemsContainer" class="booking-items-container">
+                            <!-- Booking items will be injected here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="stages-grid">
+                        <div id="stageCard1" class="stage-card">
+                            <div class="stage-card-header">
+                                <div class="stage-card-dot red"></div>
+                                <h3>Rå Data</h3>
+                            </div>
+                            <div class="stage-card-content">
+                                <ul>
+                                    <li>- Uvalideret input</li>
+                                    <li>- Manuel behandling nødvendig</li>
+                                    <li>- Risiko for fejl</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="stageCard2" class="stage-card">
+                            <div class="stage-card-header">
+                                <div class="stage-card-dot blue"></div>
+                                <h3>Raffineret Data</h3>
+                            </div>
+                            <div class="stage-card-content">
+                                <ul>
+                                    <li>- Valideret og struktureret</li>
+                                    <li>- Klar til automatisering</li>
+                                    <li>- Forbedret nøjagtighed</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="stageCard3" class="stage-card">
+                            <div class="stage-card-header">
+                                <div class="stage-card-dot green"></div>
+                                <h3>Færdigbehandlet</h3>
+                            </div>
+                            <div class="stage-card-content">
+                                <ul>
+                                    <li>- Integreret i bookingsystem</li>
+                                    <li>- Automatisk bekræftelse sendt</li>
+                                    <li>- Klar til gæsten</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="simulateButton" class="simulate-button" onclick="createNewBooking()">
+                            <span id="buttonText">Simuler</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking">
+            <h2>Book et Møde og gør din hver dag bedre</h2>
+            <form class="booking-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Dit Navn" required>
+                    <input type="email" name="email" placeholder="Din Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" id="date-picker" name="booking_date" placeholder="Vælg en dato" required>
+                    <input type="time" id="time-picker" name="booking_time" placeholder="Vælg et tidspunkt" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="extra_note" placeholder="Extra note" class="full-width" required>
+                </div>
+                <button type="submit">Book et møde</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Firmanavn. Alle rettigheder forbeholdes.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privatlivspolitik</a></li>
+                <li><a href="#">Betingelser for brug</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="form-container">
+                <div id="login-form-container">
+                    <h2>Login</h2>
+                    <form id="login-form">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="button" id="login-btn">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                </div>
+                <div id="signup-form-container" style="display: none;">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

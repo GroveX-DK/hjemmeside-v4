@@ -1,0 +1,11 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+John Doe,john.doe@example.com,123-456-7890,2025-08-01,55.50,60,5,Pizza|Salad
+Jane Smith,jane.smith@example.com,234-567-8901,2025-08-02,32.75,45,2,Pasta
+Peter Jones,peter.jones@example.com,345-678-9012,2025-08-02,125.00,90,8,Steak|Wine|Fries
+Mary Williams,mary.williams@example.com,456-789-0123,2025-08-03,22.00,30,1,Soup|Soda
+David Brown,david.brown@example.com,567-890-1234,2025-08-05,45.25,75,12,Burger|Beer
+Susan Davis,susan.davis@example.com,678-901-2345,2025-08-06,18.50,25,3,Sandwich
+Michael Miller,michael.miller@example.com,789-012-3456,2025-08-08,88.90,110,15,Pizza|Pizza|Beer
+Linda Wilson,linda.wilson@example.com,890-123-4567,2025-08-10,65.00,50,7,Pasta|Salad|Wine
+John Doe,john.doe@example.com,123-456-7890,2025-08-11,15.00,20,5,Fries|Soda
+Jane Smith,jane.smith@example.com,234-567-8901,2025-08-14,75.20,85,11,Steak|Fries

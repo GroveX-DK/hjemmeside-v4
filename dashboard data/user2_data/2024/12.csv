@@ -1,0 +1,8 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+UserTwo Quebec,u2.quebec@example.com,202-202-2036,2024-12-02,130.00,140,15,Steak|Wine|Fries
+UserTwo Romeo,u2.romeo@example.com,202-202-2037,2024-12-05,75.50,85,9,Pasta|Beer
+UserTwo Sierra,u2.sierra@example.com,202-202-2038,2024-12-09,160.80,170,15,Pizza|Pizza|Wine|Salad
+UserTwo Tango,u2.tango@example.com,202-202-2039,2024-12-14,48.25,55,6,Sandwich|Soup
+UserTwo Uniform,u2.uniform@example.com,202-202-2040,2024-12-18,100.00,110,12,Steak|Beer
+UserTwo Quebec,u2.quebec@example.com,202-202-2036,2024-12-23,145.00,155,15,Steak|Steak|Wine
+UserTwo Romeo,u2.romeo@example.com,202-202-2037,2024-12-27,40.00,45,9,Pasta|Soda

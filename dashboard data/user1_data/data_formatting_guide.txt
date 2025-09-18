@@ -1,0 +1,38 @@
+# Dashboard Data Formatting Guide
+
+This guide explains how to format and save your data so it can be correctly displayed on the analytics dashboard.
+
+## 1. File Format
+
+The data must be saved in a **CSV (Comma-Separated Values)** file. This is a plain text file where each line represents a record, and the values in the record are separated by commas.
+
+## 2. File Naming and Location
+
+-   Data files must be organized into folders by year and named by month.
+-   The folder structure is: `dashboard data/YYYY/MM.csv`
+    -   `YYYY` is the four-digit year (e.g., 2025).
+    -   `MM` is the two-digit month (e.g., 08 for August).
+-   **Example:** Data for August 2025 should be saved in `dashboard data/2025/08.csv`.
+
+## 3. Data Structure (CSV Columns)
+
+Each CSV file must have a header row with the following column names, in this exact order:
+
+`Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product`
+
+### Column Descriptions:
+
+-   **Name**: The customer's full name (e.g., `John Doe`).
+-   **Email**: The customer's email address (e.g., `john.doe@example.com`). This is used to identify unique customers.
+-   **PhoneNumber**: The customer's phone number (e.g., `123-456-7890`).
+-   **Date**: The date of the transaction in `YYYY-MM-DD` format (e.g., `2025-08-16`).
+-   **MoneySpent**: The total amount of money spent in the transaction. This should be a number without any currency symbols (e.g., `150.50`).
+-   **TimeSpent**: The duration of the customer's visit in minutes (e.g., `60`).
+-   **TableNumber**: The table number associated with the booking (e.g., `5`).
+-   **Product**: The name of the primary product sold (e.g., `Pizza`). For orders with multiple items, separate each product with a pipe character (`|`), like `Pizza|Salad`. This is used for the "Mest solgte produkt" chart.
+
+### Example CSV Row:
+
+`Jane Smith,jane.smith@example.com,234-567-8901,2025-08-17,25.99,45,2,Pasta`
+
+By following this structure, your program can generate data files that the dashboard will automatically read and visualize.

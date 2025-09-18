@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Conveyor Belt Visualization -->
+        <div class="conveyor-belt-container">
+            <!-- Belt Track -->
+            <div class="belt-track">
+                <!-- Animated Belt Pattern -->
+                <div class="belt-pattern" id="beltPattern"></div>
+                
+                <!-- Stage Markers -->
+                <div class="stage-markers">
+                    <div class="stage-marker">
+                        <div class="stage-dot red" id="stageDot1"></div>
+                        <span class="stage-label">Rå Data</span>
+                    </div>
+                    <div class="stage-marker">
+                        <div class="stage-dot blue" id="stageDot2"></div>
+                        <span class="stage-label">Raffineret</span>
+                    </div>
+                    <div class="stage-marker">
+                        <div class="stage-dot green" id="stageDot3"></div>
+                        <span class="stage-label">Booking System</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moving Booking Items Container -->
+            <div class="booking-items-container" id="bookingItemsContainer">
+                <!-- Booking cards will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Processing Stages Details -->
+        <div class="stages-grid">
+            <div class="stage-card" id="stageCard1">
+                <div class="stage-card-header">
+                    <div class="stage-card-dot red"></div>
+                    <h3>Rå Data</h3>
+                </div>
+                <div class="stage-card-content">
+                    <ul>
+                        <li>• Grundlæggende formular input</li>
+                        <li>• Uvalideret data</li>
+                        <li>• Rå tidsstempler</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stage-card" id="stageCard2">
+                <div class="stage-card-header">
+                    <div class="stage-card-dot blue"></div>
+                    <h3>Raffineret Data</h3>
+                </div>
+                <div class="stage-card-content">
+                    <ul>
+                        <li>• Rent format</li>
+                        <li>• Verificeret tilgængelighed</li>
+                        <li>• Bordtildeling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stage-card" id="stageCard3">
+                <div class="stage-card-header">
+                    <div class="stage-card-dot green"></div>
+                    <h3>Booking System</h3>
+                </div>
+                <div class="stage-card-content">
+                    <ul>
+                        <li>• Bekræftet reservation</li>
+                        <li>• System integration</li>
+                        <li>• Kunde notifikation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="button-container">
+            <button class="simulate-button" id="simulateButton" onclick="createNewBooking()">
+                <span id="buttonText">Simuler</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Analytics Dashboard</h1>
+            <p>Overview of your business metrics</p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card blue-bg">
+                <div class="stat-content">
+                    <h3 id="total-revenue">$0</h3>
+                    <p>Total Omsætning</p>
+                </div>
+                <div class="stat-icon">💰</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-content">
+                    <h3 id="total-bookings">0</h3>
+                    <p>Total Bookinger</p>
+                </div>
+                <div class="stat-icon">📦</div>
+            </div>
+
+            <div class="stat-card blue-bg">
+                <div class="stat-content">
+                    <h3 id="new-customers">0</h3>
+                    <p>Nye Kunder</p>
+                </div>
+                <div class="stat-icon">👥</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-content">
+                    <h3 id="growth-rate">+0%</h3>
+                    <p>Vækstrate</p>
+                </div>
+                <div class="stat-icon">📈</div>
+            </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Omsætnings Graf</h3>
+                    <div class="time-filter" id="revenueFilter">
+                        <button class="filter-btn" data-period="1month">1M</button>
+                        <button class="filter-btn active" data-period="3months">3M</button>
+                        <button class="filter-btn" data-period="6months">6M</button>
+                        <button class="filter-btn" data-period="1year">1Y</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Antal Bookinger</h3>
+                    <div class="time-filter" id="visitsFilter">
+                        <button class="filter-btn" data-period="1month">1M</button>
+                        <button class="filter-btn active" data-period="3months">3M</button>
+                        <button class="filter-btn" data-period="6months">6M</button>
+                        <button class="filter-btn" data-period="1year">1Y</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="visitsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Mest solgte produkt</h3>
+                    <div class="time-filter" id="categoryFilter">
+                        <button class="filter-btn" data-period="1month">1M</button>
+                        <button class="filter-btn active" data-period="3months">3M</button>
+                        <button class="filter-btn" data-period="6months">6M</button>
+                        <button class="filter-btn" data-period="1year">1Y</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Omsætning per Booking</h3>
+                    <div class="time-filter" id="combinedFilter">
+                        <button class="filter-btn" data-period="1month">1M</button>
+                        <button class="filter-btn active" data-period="3months">3M</button>
+                        <button class="filter-btn" data-period="6months">6M</button>
+                        <button class="filter-btn" data-period="1year">1Y</button>
+                    </div>
+                </div>
+                <div class="revenue-orders-container">
+                    <div class="chart-container revenue-orders-chart">
+                        <canvas id="combinedChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Firmanavn. Alle rettigheder forbeholdes.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privatlivspolitik</a></li>
+                <li><a href="#">Betingelser for brug</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

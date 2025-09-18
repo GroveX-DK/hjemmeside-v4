@@ -1,0 +1,9 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+UserTwo Alpha,u2.alpha@example.com,202-202-2020,2025-08-01,85.00,90,5,Steak|Wine
+UserTwo Bravo,u2.bravo@example.com,202-202-2021,2025-08-03,65.25,70,2,Pasta|Beer
+UserTwo Charlie,u2.charlie@example.com,202-202-2022,2025-08-05,130.80,140,10,Pizza|Pizza|Salad
+UserTwo Delta,u2.delta@example.com,202-202-2023,2025-08-08,32.00,35,1,Sandwich|Soda
+UserTwo Echo,u2.echo@example.com,202-202-2024,2025-08-12,100.50,110,8,Steak|Fries|Beer
+UserTwo Foxtrot,u2.foxtrot@example.com,202-202-2025,2025-08-15,115.00,120,11,Pizza|Pizza|Wine
+UserTwo Alpha,u2.alpha@example.com,202-202-2020,2025-08-18,28.00,30,5,Fries|Soda
+UserTwo Bravo,u2.bravo@example.com,202-202-2021,2025-08-22,75.75,80,2,Pasta|Salad|Wine

@@ -1,0 +1,8 @@
+Name,Email,PhoneNumber,Date,MoneySpent,TimeSpent,TableNumber,Product
+UserOne Quebec,u1.quebec@example.com,101-101-1026,2024-12-02,110.00,120,13,Steak|Wine|Fries
+UserOne Romeo,u1.romeo@example.com,101-101-1027,2024-12-05,55.50,60,7,Pasta|Beer
+UserOne Sierra,u1.sierra@example.com,101-101-1028,2024-12-09,140.80,150,15,Pizza|Pizza|Wine|Salad
+UserOne Tango,u1.tango@example.com,101-101-1029,2024-12-14,38.25,45,4,Sandwich|Soup
+UserOne Uniform,u1.uniform@example.com,101-101-1030,2024-12-18,80.00,90,10,Steak|Beer
+UserOne Quebec,u1.quebec@example.com,101-101-1026,2024-12-23,125.00,135,13,Steak|Steak|Wine
+UserOne Romeo,u1.romeo@example.com,101-101-1027,2024-12-27,30.00,35,7,Pasta|Soda
